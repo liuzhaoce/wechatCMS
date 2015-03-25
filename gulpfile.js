@@ -33,12 +33,6 @@ gulp.task('nodemon', function () {
     nodemon({script: 'wechat.js'});
 });
 
-/*mocha*/
-gulp.task('watch-mocha', function () {
-    gulp.watch(["test/*.js","test/*.js"], ['mocha']);
-});
-
-
 gulp.task('watch', function () {
     gulp.watch('public/css/*.less', ['less']);  // Watch all the .less files, then run the less task
 });
